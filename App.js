@@ -8,9 +8,9 @@ const navigator = createStackNavigator(
     Home: HomeScreen,
   },
   {
-    initialRouteName: 'Home',
+    initialRouteName: 'Search',
     defaultNavigationOptions: {
-      title: 'Home',
+      title: 'Business Search',
     },
   },
 );

@@ -1,9 +1,11 @@
 import React from 'react';
 import {View, Text, TextInput, StyleSheet} from 'react-native';
+import Search from 'react-native-vector-icons/Feather';
 
 const SearchBar = ({term, onTermChange, onTermSumit}) => {
   return (
     <View style={styles.background}>
+      <Search name="search" style={styles.iconsStyle} />
       <TextInput
         autoCapitalize="none"
         autoCorrect={false}
@@ -26,7 +28,11 @@ const styles = StyleSheet.create({
     marginHorizontal: 15,
     flexDirection: 'row',
   },
-
+  iconsStyle: {
+    fontSize: 30,
+    alignSelf: 'center',
+    marginHorizontal: 15,
+  },
   inputStyle: {
     flex: 1,
     fontSize: 18,
