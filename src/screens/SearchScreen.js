@@ -8,7 +8,7 @@ const SearchScreen = () => {
   const [results, setResults] = useState([]);
 
   const serachApi = async () => {
-    const response = await yelp.get('/serach', {
+    const response = await yelp.get('/search', {
       params: {
         limit: 50,
         term,
@@ -20,7 +20,7 @@ const SearchScreen = () => {
 
   return (
     <View>
-      <SearchBar term={term} onTermChange={setTerm} onTermSubmit={serachApi} />
+      <SearchBar term={term} onTermChange={setTerm} onTermSumit={serachApi} />
       <Text> serach bar </Text>
       <Text>we have found {results.length} results</Text>
     </View>

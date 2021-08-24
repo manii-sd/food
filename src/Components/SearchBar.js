@@ -36,6 +36,7 @@ const styles = StyleSheet.create({
   inputStyle: {
     flex: 1,
     fontSize: 18,
+    color: 'black',
   },
 });
 export default SearchBar;
